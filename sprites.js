@@ -1,12 +1,12 @@
 
 
-var mountainImages = [ 'imgs/scene/mountains01.png', 'imgs/scene/mountains02.png', 'imgs/scene/mountains03.png', 'imgs/scene/mountains04.png'];
-var cloudImages = [ 'imgs/scene/cloud01.png', 'imgs/scene/cloud02.png'];
-var brickImages = [ 'imgs/blocks/blocks001.png', 'imgs/blocks/blocks002.png', 'imgs/blocks/blocks003.png'];
-var coinsImags = [ 'imgs/blocks/coin01.png', 'imgs/blocks/coin05.png' ];
-var pipeImages = [ 'imgs/scene/tube.png' ];
-var platformImages = [ 'imgs/scene/platform.png' ];
-var enemyMushroomImage = [ 'imgs/enemy/enemyMushroom01.png','imgs/enemy/enemyMushroom02.png'];
+var mountainImages = [ 'mountains01.png', 'mountains02.png', 'mountains03.png', 'mountains04.png'];
+var cloudImages = [ 'cloud01.png', 'cloud02.png'];
+var brickImages = [ 'blocks001.png', 'blocks002.png', 'blocks003.png'];
+var coinsImags = [ 'icoin01.png', 'coin05.png' ];
+var pipeImages = [ 'tube.png' ];
+var platformImages = [ 'platform.png' ];
+var enemyMushroomImage = [ 'enemyMushroom01.png','enemyMushroom02.png'];
 
 var spriteNumber={
   mountain: 6,
@@ -75,7 +75,7 @@ function loadAnimatedObjects( group, imageArray, animationName, spriteNumber, sp
 
 // load platforms
 function loadPlatforms() {
-  img=loadImage('imgs/scene/platform.png');
+  img=loadImage('platform.png');
   for(i=0;i<70;i++){
     randomNumber=random();
     if(randomNumber>0.2){
@@ -92,11 +92,11 @@ function loadPlatforms() {
 // load Mario animation
 function MarioAnimation(){
   mario=createSprite(gameConfig.startingPointX, gameConfig.startingPointY, gameConfig.startingPoint, 0.30);
-  mario.addAnimation("stand",'imgs/mario/mario06.png');
-  mario.addAnimation("move",'imgs/mario/mario01.png','imgs/mario/mario03.png');
-  mario.addAnimation("crouch",'imgs/mario/mario18.png');
-  mario.addAnimation("jump",'imgs/mario/mario05.png');
-  mario.addAnimation("dead",'imgs/mario/mario24.png');
+  mario.addAnimation("stand",'mario06.png');
+  mario.addAnimation("move",'mario01.png','mario03.png');
+  mario.addAnimation("crouch",'mario18.png');
+  mario.addAnimation("jump",'mario05.png');
+  mario.addAnimation("dead",'mario24.png');
 };
 
 
